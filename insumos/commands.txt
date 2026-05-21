@@ -1,0 +1,37 @@
+Qué se configuró
+Un solo archivo para cambiar la URL
+config/webview.php — config principal del WebView. Para cambiar la URL, solo edita .env:
+
+
+WEBVIEW_URL=https://tudominio.com
+Cómo funciona el WebView externo
+El flujo es limpio y en 3 pasos:
+
+LaravelEnvironment.kt lee WEBVIEW_URL del .env bundleado
+MainActivity.kt lo pasa al WebViewManager antes de cargar
+WebViewManager.kt permite navegación dentro del dominio — todo lo demás se abre en el browser del sistema
+Settings nativos aplicados en WebViewManager.kt
+useWideViewPort = true — respeta el <meta name="viewport"> de tu sitio
+setSupportZoom(false) — sin pinch-to-zoom (como app nativa)
+overScrollMode = OVER_SCROLL_NEVER — sin el efecto "glow" al hacer scroll
+User Agent custom: "... Chrome/XXX GSMovilApp/1.0" configurable con WEBVIEW_UA_SUFFIX
+Para publicar en Android (Play Store)
+En .env:
+
+
+NATIVEPHP_APP_ID=com.tuempresa.tuapp      # ID del paquete
+NATIVEPHP_APP_VERSION=1.0.0
+NATIVEPHP_APP_VERSION_CODE=1              # Incrementar en cada release
+NATIVEPHP_GRADLE_PATH=C:\...\jbr         # Ruta al JDK de Android Studio
+NATIVEPHP_ANDROID_SDK_LOCATION=C:\...\Sdk
+Comando: php artisan native:package android
+
+Para publicar en Mac/iOS (App Store)
+En .env:
+
+
+NATIVEPHP_DEVELOPMENT_TEAM=ABCDE12345    # Tu Team ID de Apple Developer
+APP_STORE_API_KEY=./storage/app/AuthKey_XXX.p8
+APP_STORE_API_KEY_ID=XXXXXXXXXX
+APP_STORE_API_ISSUER_ID=xxxx-xxxx-xxxx
+Comando: php artisan native:package ios

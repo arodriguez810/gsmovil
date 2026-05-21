@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" install -r \"C:\\\\Users\\\\angel.rodriguez\\\\Documents\\\\fuentes\\\\gsmovil\\\\nativephp\\\\android\\\\app\\\\build\\\\outputs\\\\apk\\\\debug\\\\app-debug.apk\")",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" shell am force-stop \"com.gsmovil.app\")",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" shell am start -n \"com.gsmovil.app/com.nativephp.mobile.ui.MainActivity\" 2>&1)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" shell screencap -p /data/local/tmp/screen2.png)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" pull /data/local/tmp/screen2.png \"C:\\\\Users\\\\angel.rodriguez\\\\Documents\\\\fuentes\\\\gsmovil\\\\nativephp\\\\screen_splash2.png\" 2>&1)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" shell am start -n \"com.gsmovil.app/com.nativephp.mobile.ui.MainActivity\")",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" shell screencap -p /data/local/tmp/splash_early.png)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" pull /data/local/tmp/splash_early.png \"C:\\\\Users\\\\angel.rodriguez\\\\Documents\\\\fuentes\\\\gsmovil\\\\nativephp\\\\screen_splash_early.png\" 2>&1)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" shell screencap -p /data/local/tmp/s3.png)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" pull /data/local/tmp/s3.png \"C:\\\\Users\\\\angel.rodriguez\\\\Documents\\\\fuentes\\\\gsmovil\\\\nativephp\\\\screen3.png\" 2>&1)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" shell screencap -p /data/local/tmp/s4.png)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" pull /data/local/tmp/s4.png \"C:\\\\Users\\\\angel.rodriguez\\\\Documents\\\\fuentes\\\\gsmovil\\\\nativephp\\\\screen4.png\" 2>&1)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" shell screencap -p /data/local/tmp/s5.png)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" pull /data/local/tmp/s5.png \"C:\\\\Users\\\\angel.rodriguez\\\\Documents\\\\fuentes\\\\gsmovil\\\\nativephp\\\\screen5.png\" 2>&1)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" shell screencap -p /data/local/tmp/s6.png)",
+      "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" pull /data/local/tmp/s6.png \"C:\\\\Users\\\\angel.rodriguez\\\\Documents\\\\fuentes\\\\gsmovil\\\\nativephp\\\\screen6.png\" 2>&1)",
+      "Bash(\"C:/Program Files/Android/Android Studio/jbr/bin/keytool.exe\" -version)",
+      "Bash(keytool -version)",
+      "Bash(./gradlew.bat bundleRelease)",
+      "Bash(keytool -list -keystore \"C:/Users/angel.rodriguez/Documents/fuentes/gsapp_vieja/android/app/upload-realese-keystore.jks\" -storepass \"gsappyorieldisama\")",
+      "Bash(keytool -list -keystore \"C:/Users/angel.rodriguez/Documents/fuentes/gsapp_vieja/android/app/upload-realese-keystore.jks\" -storepass \"gsappyorieldisama\" -storetype PKCS12)",
+      "Bash(xxd \"C:/Users/angel.rodriguez/Documents/fuentes/gsapp_vieja/android/app/upload-realese-keystore.jks\")",
+      "Bash(keytool -list -keystore \"C:/Users/angel.rodriguez/Documents/fuentes/gsapp_vieja/android/app/upload-realese-keystore.jks\" -storepass \"gsappyorieldisama\" -storetype JKS)",
+      "Bash(./gradlew bundleRelease --no-daemon)",
+      "Bash(keytool -list -keystore \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/generalseguros-release.jks\" -storepass \"Gs2024Movil#\" -v)",
+      "Bash(keytool -list -keystore \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/keys/gsappkey.keystore\" -storepass \"gsappyorieldisama\" -v)",
+      "Bash(keytool -export -keystore \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/generalseguros-release.jks\" -alias generalseguros -storepass \"Gs2024Movil#\" -file \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/keys/generalseguros-upload-cert.pem\" -rfc)",
+      "Bash(java -jar C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/keys/pepk.jar --keystore=C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/generalseguros-release.jks --alias=generalseguros --output=C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/keys/output.zip -rsa-aes-encryption --encryption-key-path=C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/keys/encryption_public_key.pem)",
+      "Bash(java -jar C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/keys/pepk.jar --keystore=C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/generalseguros-release.jks --alias=generalseguros '--keystore-pass=Gs2024Movil#' '--key-pass=Gs2024Movil#' --output=C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/keys/output.zip --rsa-aes-encryption --encryption-key-path=C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/keys/encryption_public_key.pem --include-cert)",
+      "Bash(xxd \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/keys/upload_cert.der\")",
+      "Bash(xxd \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/keys/deployment_cert.der\")",
+      "Bash(keytool -printcert -file \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/keys/upload_cert.der\")",
+      "Bash(keytool -printcert -file \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/keys/deployment_cert.der\")",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}
