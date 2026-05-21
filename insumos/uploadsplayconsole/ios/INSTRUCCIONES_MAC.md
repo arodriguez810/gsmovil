@@ -56,16 +56,16 @@ npm install
 ### 3.2 Registrar el App ID
 - Ve a: https://developer.apple.com → Certificates, IDs & Profiles → Identifiers
 - Clic en **+** → App IDs → App
-- Bundle ID: `com.gsmovil.app`
-- Capabilities: mínimo "Push Notifications" si las usas
+- Bundle ID: `com.gsapp.app`
+- Capabilities: ✅ Push Notifications
 - Guardar
 
 ### 3.3 Crear la app en App Store Connect
 - Ve a: https://appstoreconnect.apple.com → Mis apps → **+**
 - Plataforma: iOS
 - Nombre: `General de Seguros`
-- Bundle ID: `com.gsmovil.app`
-- SKU: `gsmovil` (cualquier identificador único)
+- Bundle ID: `com.gsapp.app`
+- SKU: `gsapp` (cualquier identificador único)
 - Idioma principal: Español
 
 ### 3.4 Crear API Key para subida automática
@@ -140,7 +140,8 @@ En App Store Connect → tu app → **App Store → Información de la versión 
 
 | Campo | Valor |
 |---|---|
-| Bundle ID | `com.gsmovil.app` |
+| Bundle ID iOS | `com.gsapp.app` |
+| Bundle ID Android | `com.gsmovil.app` |
 | Nombre | General de Seguros |
 | Versión | 1.0.1 |
 | URL que carga | https://qa.gsweb.com.do/login |

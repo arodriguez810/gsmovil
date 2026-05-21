@@ -86,7 +86,8 @@
       "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" shell screencap -p /data/local/tmp/screen.png)",
       "PowerShell(& \"C:\\\\AndroidSDK\\\\platform-tools\\\\adb.exe\" pull /data/local/tmp/screen.png \"C:\\\\Users\\\\angel.rodriguez\\\\Documents\\\\fuentes\\\\gsmovil\\\\nativephp\\\\screen_splash.png\" 2>&1)",
       "Bash(php artisan *)",
-      "Bash(mkdir -p \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/insumos/uploadsplayconsole/ios/screenshots/iphone_69\" \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/insumos/uploadsplayconsole/ios/screenshots/iphone_67\" \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/insumos/uploadsplayconsole/ios/screenshots/ipad_13\" && echo OK)"
+      "Bash(mkdir -p \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/insumos/uploadsplayconsole/ios/screenshots/iphone_69\" \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/insumos/uploadsplayconsole/ios/screenshots/iphone_67\" \"C:/Users/angel.rodriguez/Documents/fuentes/gsmovil/insumos/uploadsplayconsole/ios/screenshots/ipad_13\" && echo OK)",
+      "Bash(python3 -c ' *)"
     ],
     "additionalDirectories": [
       "C:\\wamp64\\bin\\php\\php8.3.28",
